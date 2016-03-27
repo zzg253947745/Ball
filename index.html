@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ball Game</title>
+		<style>
+			*,
+			html,
+			body {
+				margin: 0;
+				accelerator
+			}
+			
+			html {
+				background: #333333;
+			}
+			
+			.playBoard {
+				position: relative;
+				width: 600px;
+				height: 400px;
+				margin: 40px auto 0;
+				background: #000000;
+				border: 1px solid #FFFFFF;
+			}
+			
+			.ball{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: #FFF100;
+				left: 290px;
+				top: 190px;
+				border-radius: 50%;
+			}
+			
+			.racket {
+				position: absolute;
+				left: 250px;
+				width: 100px;
+				height: 12px;
+				
+			}
+			
+			.rackettop {
+				top: 0px;
+				background: #008080;
+			}
+			
+			.racketbottom {
+				bottom: 0px;
+				background: #0074C7;
+			}
+			
+			.score{
+				position: absolute;
+				width: 150px;
+				height:300px;
+				right:-152px;
+				top:-1px;
+				color:#24A0FF;
+				background: #111111;
+				border: 1px solid #ffffff;
+			}
+			
+			.score p{
+				color:#B8F27A;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			
+			.remind{
+				position: absolute;
+				width: 200px;
+				height: 100px;
+				top:150px;
+				left: 200px;
+				border: 1px solid #24A0FF;
+				background: #4C3000;
+				color:#DFD200;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="playBoard" class="playBoard">
+			<div id="ball" class="ball"></div>
+			<div id="playerOne" class="racket rackettop"></div>
+			<div id="playerTwo" class="racket racketbottom"></div>
+			<div id="score" class="score">
+				Round:
+				<p id="round">1</p>
+				Round Time:
+				<p class="time">00:00:00</p>
+				Score:
+				<p>
+					<span id="scoreOne">00</span>:<span id="scoreTwo">00</span>
+				</p>
+			</div>
+			<div id="remind" class="remind">
+				<p class="txt"></p>
+				<button id="btn">Play Again</button>
+			</div>
+		</div>
+		
+		<script>
+			
+			var box = document.getElementById('playBoard'),
+				ball = document.getElementById('ball'), 
+				player1 = document.getElementById('playerOne'), 
+				player2 = document.getElementById('playerTwo'),
+				p_round = document.getElementById('round'),
+				p_time = document.getElementById('time'),
+				p_score_1 = document.getElementById('scoreOne'),
+				p_score_2 = document.getElementById('scoreTwo'),
+				remind_box = document.getElementById('remind'),
+				speed = 10, 
+				delay=30;
+			
+			
+			
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>
